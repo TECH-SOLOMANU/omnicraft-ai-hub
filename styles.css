@@ -1,13 +1,13 @@
 /* ==========================================================================
-   OmniCraft AI — Cyber Violet Design System (Original Screenshot Design)
+   OmniCraft AI — Cyber Violet Design System (100% Exact Screenshot Match)
    ========================================================================== */
 
 :root {
-  --bg-primary: #0f081d;
-  --bg-surface: rgba(26, 15, 46, 0.75);
-  --bg-card: rgba(36, 21, 64, 0.7);
-  --bg-card-hover: rgba(50, 29, 89, 0.85);
-  --bg-input: rgba(18, 10, 35, 0.8);
+  --bg-primary: #0b0616;
+  --bg-surface: rgba(22, 13, 38, 0.85);
+  --bg-card: rgba(30, 18, 52, 0.8);
+  --bg-card-hover: rgba(42, 25, 72, 0.9);
+  --bg-input: rgba(14, 8, 25, 0.9);
 
   --border-color: rgba(139, 92, 246, 0.25);
   --border-glow: rgba(168, 85, 247, 0.5);
@@ -23,7 +23,6 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
   --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
@@ -57,12 +56,12 @@ body, html {
 .glow {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.3;
+  filter: blur(140px);
+  opacity: 0.35;
 }
 
-.glow-1 { top: -10%; left: 10%; width: 500px; height: 500px; background: #8b5cf6; }
-.glow-2 { bottom: 10%; right: 10%; width: 600px; height: 600px; background: #ec4899; }
+.glow-1 { top: -10%; left: 10%; width: 550px; height: 550px; background: #8b5cf6; }
+.glow-2 { bottom: 10%; right: 10%; width: 650px; height: 650px; background: #ec4899; }
 
 .app-layout {
   position: relative;
@@ -82,7 +81,7 @@ body, html {
   border-radius: var(--radius-md);
   padding: 12px 20px;
   text-align: center;
-  background: rgba(26, 15, 46, 0.4);
+  background: rgba(22, 13, 38, 0.5);
 }
 
 .ad-label {
@@ -104,7 +103,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .brand-area {
@@ -114,15 +113,15 @@ body, html {
 }
 
 .brand-logo {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background: var(--accent-gradient);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.4);
+  box-shadow: 0 4px 18px rgba(168, 85, 247, 0.45);
 }
 
 .brand-title {
@@ -155,7 +154,7 @@ body, html {
   gap: 6px;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 12px;
 }
@@ -183,11 +182,6 @@ body, html {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: transform 0.2s ease;
-}
-
-.btn-donate-glow:hover {
-  transform: translateY(-2px);
 }
 
 /* 3. HORIZONTAL NAV TABS CONTAINER */
@@ -304,12 +298,7 @@ body, html {
   padding: 48px 20px;
   text-align: center;
   cursor: pointer;
-  transition: border-color 0.2s ease;
   position: relative;
-}
-
-.drop-zone-dashed:hover {
-  border-color: var(--accent-primary);
 }
 
 .folder-icon {
@@ -338,14 +327,142 @@ body, html {
   display: none;
 }
 
-/* Controls Toolbar */
+/* Studio 2 Column Grid (Screenshot 1) */
+.studio-two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.studio-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.studio-card h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.glass-card-preview-container {
+  background: rgba(14, 8, 25, 0.9);
+  padding: 30px 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frosted-glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  color: white;
+  width: 100%;
+}
+
+.frosted-glass-box h4 {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.frosted-glass-box p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.wave-preview-canvas {
+  background: rgba(14, 8, 25, 0.9);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.slider {
+  width: 100%;
+  accent-color: var(--accent-primary);
+}
+
+.color-picker-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary-glass {
+  background: rgba(30, 18, 52, 0.9);
+  border: 1px solid var(--border-glow);
+  color: var(--text-primary);
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Sub-Tab Pills (Screenshot 3) */
+.sub-tab-pills {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.pill-tab {
+  background: rgba(30, 18, 52, 0.7);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pill-tab.active {
+  background: var(--accent-gradient);
+  color: white;
+  border-color: transparent;
+}
+
+/* Form Elements */
 .form-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-textarea, input[type="text"], select {
+textarea, select {
   background: var(--bg-input);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
@@ -360,10 +477,6 @@ textarea, input[type="text"], select {
 textarea {
   min-height: 140px;
   resize: vertical;
-}
-
-textarea:focus, input:focus, select:focus {
-  border-color: var(--accent-primary);
 }
 
 .control-toolbar {
@@ -385,21 +498,20 @@ textarea:focus, input:focus, select:focus {
   color: var(--text-secondary);
 }
 
-.btn {
+.btn-primary-gradient {
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
   padding: 12px 24px;
   border-radius: var(--radius-md);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
-  border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-}
-
-.btn-primary {
-  background: var(--accent-gradient);
-  color: white;
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.4);
 }
 
 .chip-btn {
@@ -430,7 +542,7 @@ textarea:focus, input:focus, select:focus {
 .ad-card-dashed {
   border: 1px dashed rgba(139, 92, 246, 0.35);
   text-align: center;
-  background: rgba(26, 15, 46, 0.4);
+  background: rgba(22, 13, 38, 0.5);
 }
 
 .ad-title {
@@ -460,7 +572,6 @@ textarea:focus, input:focus, select:focus {
 .support-title {
   font-size: 16px;
   font-weight: 800;
-
 }
 
 .support-desc {
@@ -516,5 +627,6 @@ textarea:focus, input:focus, select:focus {
 
 @media (max-width: 900px) {
   .content-grid { grid-template-columns: 1fr; }
+  .studio-two-column-grid { grid-template-columns: 1fr; }
   .nav-tabs-container { flex-direction: column; }
 }

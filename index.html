@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="violet">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!-- Google Analytics Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTKC5MNE9E"></script>
   <script>
@@ -13,7 +14,7 @@
     gtag('config', 'G-BTKC5MNE9E');
   </script>
 
-  <!-- Google AdSense Auto-Ads Tag -->
+  <!-- Google AdSense Auto-Ads Tag (User's exact 3 lines) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361055289131226" crossorigin="anonymous"></script>
 
   <!-- SEO Meta Tags -->
@@ -71,11 +72,11 @@
 
     <!-- 3. HORIZONTAL NAV TABS CONTAINER -->
     <nav class="nav-tabs-container">
-      <button class="nav-tab" data-tool="tool-summarizer">
+      <button class="nav-tab active" data-tool="tool-summarizer">
         <span>📄</span> <span>AI Text Summarizer</span>
       </button>
 
-      <button class="nav-tab active" data-tool="tool-compressor">
+      <button class="nav-tab" data-tool="tool-compressor">
         <span>🖼️</span> <span>Image Compressor</span>
       </button>
 
@@ -94,8 +95,8 @@
         <!-- LEFT / MAIN TOOL PANEL AREA -->
         <div class="panel-area">
 
-          <!-- TOOL 1: AI TEXT SUMMARIZER -->
-          <section id="tool-summarizer" class="tool-panel">
+          <!-- TOOL 1: AI SMART TEXT & DOCUMENT SUMMARIZER (SCREENSHOT 4) -->
+          <section id="tool-summarizer" class="tool-panel active">
             <div class="panel-header">
               <div>
                 <h2>🤖 AI Smart Text & Document Summarizer</h2>
@@ -135,7 +136,7 @@
                   </select>
                 </div>
 
-                <button id="btn-generate-sum" class="btn btn-primary">
+                <button id="btn-generate-sum" class="btn btn-primary-gradient">
                   <span>⚡</span> Generate Summary
                 </button>
               </div>
@@ -154,8 +155,8 @@
             </div>
           </section>
 
-          <!-- TOOL 2: BROWSER-NATIVE IMAGE COMPRESSOR (ACTIVE IN SCREENSHOT) -->
-          <section id="tool-compressor" class="tool-panel active">
+          <!-- TOOL 2: BROWSER-NATIVE IMAGE COMPRESSOR (SCREENSHOT 2) -->
+          <section id="tool-compressor" class="tool-panel">
             <div class="panel-header">
               <div>
                 <h2>🖼️ Browser-Native Image Compressor & Converter</h2>
@@ -215,40 +216,30 @@
             </div>
           </section>
 
-          <!-- TOOL 3: AI BIO & PROMPT ENHANCER -->
+          <!-- TOOL 3: AI SOCIAL BIO & PROMPT OPTIMIZER (SCREENSHOT 3) -->
           <section id="tool-bio" class="tool-panel">
             <div class="panel-header">
               <div>
-                <h2>✍️ AI Social Bio & Elevator Pitch Enhancer</h2>
-                <p class="panel-sub">Craft viral bios for Twitter/X, LinkedIn, Instagram, and GitHub in seconds.</p>
+                <h2>✍️ AI Social Bio & Prompt Optimizer</h2>
+                <p class="panel-sub">Craft high-converting LinkedIn/Twitter bios and polish AI prompts for ChatGPT & Claude.</p>
               </div>
-              <span class="pill-badge pill-free">4 Presets</span>
             </div>
 
             <div class="form-container">
-              <div class="form-group">
-                <label for="bio-role">Your Role / Profession / Expertise:</label>
-                <input type="text" id="bio-role" placeholder="e.g. Full-Stack Developer, Content Creator, Student">
+              <div class="sub-tab-pills">
+                <button class="pill-tab active">LinkedIn Bio & Headline</button>
+                <button class="pill-tab">Twitter / X Bio</button>
+                <button class="pill-tab">ChatGPT / AI Prompt Enhancer</button>
               </div>
 
               <div class="form-group">
-                <label for="bio-keywords">Key Skills / Achievements (Comma Separated):</label>
-                <input type="text" id="bio-keywords" placeholder="e.g. React, Building SaaS, Coffee Lover">
+                <label for="bio-role">Enter keywords, current role, or raw prompt:</label>
+                <textarea id="bio-role" placeholder="e.g. Full stack developer, passionate about React, building SaaS apps, open for freelance work..."></textarea>
               </div>
 
-              <div class="control-toolbar">
-                <div class="selector-group">
-                  <label for="bio-platform">Platform:</label>
-                  <select id="bio-platform">
-                    <option value="twitter">🐦 Twitter / X Bio</option>
-                    <option value="linkedin">💼 LinkedIn Headline</option>
-                    <option value="instagram">📸 Instagram Bio</option>
-                    <option value="github">💻 GitHub Profile README</option>
-                  </select>
-                </div>
-
-                <button id="btn-generate-bio" class="btn btn-primary">Generate Bio Options</button>
-              </div>
+              <button id="btn-generate-bio" class="btn btn-primary-gradient full-width">
+                <span>⚡</span> Generate Optimized Output
+              </button>
 
               <div id="bio-output-card" class="output-card hidden">
                 <div id="bio-results-list" class="bio-results-grid"></div>
@@ -256,38 +247,64 @@
             </div>
           </section>
 
-          <!-- TOOL 4: GLASSMORPHISM & WAVE STUDIO -->
+          <!-- TOOL 4: GLASSMORPHISM & SVG WAVE STUDIO (SCREENSHOT 1) -->
           <section id="tool-generator" class="tool-panel">
             <div class="panel-header">
               <div>
-                <h2>📝 CSS Glassmorphism & SVG Wave Studio</h2>
-                <p class="panel-sub">Design modern glass card CSS tokens and customizable SVG background wave dividers.</p>
+                <h2>🎨 Glassmorphism & SVG Wave Studio</h2>
+                <p class="panel-sub">Generate modern frosted glass CSS panels & customizable SVG background waves for your web projects.</p>
               </div>
-              <span class="pill-badge pill-free">Live Preview</span>
             </div>
 
-            <div class="form-container">
-              <div class="sub-tool-selector">
-                <button id="tab-glass" class="sub-tab active">Glassmorphism Card Generator</button>
-                <button id="tab-wave" class="sub-tab">SVG Wave Generator</button>
-              </div>
-
-              <div id="sub-panel-glass" class="sub-panel active">
-                <div class="glass-editor-grid">
-                  <div class="glass-controls">
-                    <div class="control-box">
-                      <label for="glass-blur">Backdrop Blur: <span id="val-blur">16px</span></label>
-                      <input type="range" id="glass-blur" min="0" max="40" value="16" class="slider">
-                    </div>
-                  </div>
-
-                  <div class="glass-preview-area">
-                    <div id="glass-card-preview" class="glass-card">
-                      <h3>Glassmorphism Card</h3>
-                      <p>Modern glass card design with CSS backdrop-filter blur.</p>
-                    </div>
+            <div class="studio-two-column-grid">
+              <!-- COLUMN 1: FROSTED GLASS CSS GENERATOR -->
+              <div class="studio-card">
+                <h3>Frosted Glass CSS Generator</h3>
+                
+                <div class="glass-card-preview-container">
+                  <div id="glass-card-preview" class="frosted-glass-box">
+                    <h4>Frosted Glass Card</h4>
+                    <p>Live preview of CSS backdrop filter and border effects.</p>
                   </div>
                 </div>
+
+                <div class="slider-group">
+                  <label for="glass-blur">Blur Effect: <span id="val-blur">16px</span></label>
+                  <input type="range" id="glass-blur" min="0" max="40" value="16" class="slider">
+                </div>
+
+                <div class="slider-group">
+                  <label for="glass-opacity">Glass Opacity: <span id="val-opacity">0.25</span></label>
+                  <input type="range" id="glass-opacity" min="0.05" max="0.8" step="0.05" value="0.25" class="slider">
+                </div>
+
+                <div class="slider-group">
+                  <label for="glass-border">Border Opacity: <span id="val-border">0.2</span></label>
+                  <input type="range" id="glass-border" min="0" max="0.6" step="0.05" value="0.2" class="slider">
+                </div>
+              </div>
+
+              <!-- COLUMN 2: INTERACTIVE SVG WAVE GENERATOR -->
+              <div class="studio-card">
+                <h3>Interactive SVG Wave Generator</h3>
+
+                <div class="wave-preview-canvas">
+                  <svg id="svg-wave-output" viewBox="0 0 1440 320" preserveAspectRatio="none" style="width: 100%; height: 180px;">
+                    <path fill="#6366f1" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,181.3C960,171,1056,181,1152,197.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                  </svg>
+                </div>
+
+                <div class="slider-group">
+                  <label for="wave-height">Wave Complexity / Height</label>
+                  <input type="range" id="wave-height" min="20" max="150" value="80" class="slider">
+                </div>
+
+                <div class="color-picker-group">
+                  <label>Wave Accent Color:</label>
+                  <input type="color" id="wave-color" value="#6366f1" class="color-swatch">
+                </div>
+
+                <button id="btn-random-wave" class="btn btn-secondary-glass full-width">Randomize Wave</button>
               </div>
             </div>
           </section>
