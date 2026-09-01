@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <!-- Google Analytics Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTKC5MNE9E"></script>
   <script>
@@ -14,95 +13,132 @@
     gtag('config', 'G-BTKC5MNE9E');
   </script>
 
-  <!-- Google AdSense Auto-Ads Tag (User's exact 3 lines) -->
+  <!-- Google AdSense Script Tag -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361055289131226" crossorigin="anonymous"></script>
 
-  <!-- SEO Meta Tags -->
-  <title>OmniCraft AI — The Ultimate Free Web Utility & Creator Suite</title>
-  <meta name="description" content="Free 100% client-side AI tools: Text Summarizer, Private Image Compressor, Bio Enhancer & SVG Wave Studio. No signup required!">
+  <!-- SEO Meta Tags for Google Ranking -->
+  <title>OmniCraft AI — Free All-In-One AI Text Summarizer, Image Compressor & Creator Tools</title>
+  <meta name="description" content="Free online suite for creators, developers, and students. Summarize text & PDFs, compress images in browser without upload, generate social bios & glassmorphic CSS/SVG background waves.">
+  <meta name="keywords" content="AI text summarizer, free image compressor, browser webp converter, SVG wave generator, CSS glassmorphism generator, social bio creator">
+  <meta name="author" content="OmniCraft AI">
+  
+  <!-- OpenGraph Tags for Social Sharing -->
+  <meta property="og:title" content="OmniCraft AI — Free All-In-One Web & Creator Utility Hub">
+  <meta property="og:description" content="Instant 100% free client-side AI tools: Text Summarizer, Private Image Compressor, Bio Enhancer & SVG Wave Generator. No signup required!">
+  <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css?v=2">
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- Schema.org WebApplication Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniCraft AI Utility Hub",
+    "url": "https://omnicraft-ai.vercel.app",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Free all-in-one suite featuring AI document summarizer, client-side image compressor, bio generator, and SVG design tools."
+  }
+  </script>
 </head>
 <body>
-  <!-- BACKGROUND GLOW ORBS -->
   <div class="background-glows">
     <div class="glow glow-1"></div>
     <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
   </div>
 
   <div class="app-layout">
-    <!-- 1. TOP SPONSORED ADVERTISEMENT BANNER -->
-    <div class="top-ad-banner">
-      <div class="ad-label">SPONSORED ADVERTISEMENT</div>
-      <div class="ad-text">🚀 Unlock Unlimited Productivity Tools &bull; Hosted 100% Free for Everyone</div>
+    <!-- TOP ADSENSE AD BANNER CONTAINER -->
+    <div class="ad-container ad-header">
+      <div class="ad-placeholder">
+        <span class="ad-label">SPONSORED ADVERTISEMENT</span>
+        <div class="ad-content-slot">
+          <!-- Google AdSense Code Tag goes here -->
+          <p>🚀 Unlock Unlimited Productivity Tools • Hosted 100% Free for Everyone</p>
+        </div>
+      </div>
     </div>
 
-    <!-- 2. HEADER NAVBAR -->
-    <header class="app-header">
-      <div class="brand-area">
-        <div class="brand-logo">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo-box">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
         </div>
         <div class="brand-text">
-          <span class="brand-title">OmniCraft <span class="gradient-text">AI</span></span>
-          <span class="tagline">The Ultimate Free Web Utility & Creator Suite</span>
+          <h1>OmniCraft <span class="gradient-text">AI</span></h1>
+          <p class="tagline">The Ultimate Free Web Utility & Creator Suite</p>
         </div>
       </div>
 
       <div class="header-actions">
         <div class="theme-selector-box">
-          <span class="theme-label">🎨 Theme:</span>
-          <select id="select-theme" class="theme-dropdown">
-            <option value="violet" selected>🚀 Cyber Violet</option>
-            <option value="dark">🌙 Cyber Dark</option>
+          <label for="theme-select" class="theme-label">🎨 Theme:</label>
+          <select id="theme-select" class="theme-dropdown">
+            <option value="violet" selected>🌌 Cyber Violet</option>
+            <option value="emerald">🟢 Neon Emerald</option>
+            <option value="cyan">⚡ Electric Cyan</option>
+            <option value="sunset">🔮 Sunset Rose</option>
             <option value="light">☀️ Modern Light</option>
           </select>
         </div>
 
-        <button id="btn-header-donate" class="btn-donate-glow">
-          <span>☕</span> <span>Support Tool (☕ Donate)</span>
+        <button id="btn-open-donate" class="btn btn-donate">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+          <span>Support Tool (☕ Donate)</span>
         </button>
       </div>
     </header>
 
-    <!-- 3. HORIZONTAL NAV TABS CONTAINER -->
-    <nav class="nav-tabs-container">
+    <!-- NAVIGATION TABS -->
+    <nav class="tool-nav">
       <button class="nav-tab active" data-tool="tool-summarizer">
-        <span>📄</span> <span>AI Text Summarizer</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <span>AI Text Summarizer</span>
       </button>
 
       <button class="nav-tab" data-tool="tool-compressor">
-        <span>🖼️</span> <span>Image Compressor</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        <span>Image Compressor</span>
       </button>
 
       <button class="nav-tab" data-tool="tool-bio">
-        <span>✍️</span> <span>AI Bio & Prompt Enhancer</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+        <span>AI Bio & Prompt Enhancer</span>
       </button>
 
       <button class="nav-tab" data-tool="tool-generator">
-        <span>📝</span> <span>Glassmorphism & Wave Studio</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+        <span>Glassmorphism & Wave Studio</span>
       </button>
     </nav>
 
-    <!-- 4. MAIN CONTENT AREA (2 COLUMNS) -->
+    <!-- MAIN CONTENT AREA -->
     <main class="main-content">
       <div class="content-grid">
-        <!-- LEFT / MAIN TOOL PANEL AREA -->
+        <!-- LEFT / MAIN TOOL PANEL -->
         <div class="panel-area">
 
-          <!-- TOOL 1: AI SMART TEXT & DOCUMENT SUMMARIZER (SCREENSHOT 4) -->
+          <!-- TOOL 1: AI TEXT SUMMARIZER -->
           <section id="tool-summarizer" class="tool-panel active">
             <div class="panel-header">
               <div>
                 <h2>🤖 AI Smart Text & Document Summarizer</h2>
                 <p class="panel-sub">Extract key insights, bullet summaries, and sentiment analysis instantly.</p>
               </div>
-              <span class="pill-badge pill-free">100% Free & Unlimited</span>
+              <div class="badge-pill">100% Free & Unlimited</div>
             </div>
 
             <div class="form-container">
@@ -136,87 +172,105 @@
                   </select>
                 </div>
 
-                <button id="btn-generate-sum" class="btn btn-primary-gradient">
-                  <span>⚡</span> Generate Summary
+                <button id="btn-generate-sum" class="btn btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  Generate Summary
                 </button>
               </div>
+            </div>
 
-              <!-- Summary Output Area -->
-              <div id="sum-output-card" class="output-card hidden">
-                <div class="output-header">
-                  <div class="output-title">AI Generated Summary</div>
-                  <div class="output-actions">
-                    <button id="btn-copy-sum" class="chip-btn secondary">Copy Text</button>
-                    <button id="btn-download-sum" class="chip-btn secondary">Download TXT</button>
-                  </div>
+            <!-- Summarizer Output Area -->
+            <div class="output-card glass-panel">
+              <div class="output-title-row">
+                <h3>Insights & Summary Output</h3>
+                <div class="action-btn-row">
+                  <button id="btn-copy-sum" class="btn btn-secondary small">Copy Summary</button>
                 </div>
-                <div id="sum-output-content" class="output-body"></div>
+              </div>
+
+              <div class="metrics-row">
+                <div class="metric-chip">
+                  <span class="m-label">Word Count:</span>
+                  <span id="metric-words" class="m-val">0</span>
+                </div>
+                <div class="metric-chip">
+                  <span class="m-label">Reading Time Saved:</span>
+                  <span id="metric-time" class="m-val">0 mins</span>
+                </div>
+                <div class="metric-chip">
+                  <span class="m-label">Sentiment:</span>
+                  <span id="metric-sentiment" class="m-val">Neutral</span>
+                </div>
+              </div>
+
+              <div id="sum-output-box" class="formatted-output">
+                <p class="placeholder-text">Your summary bullet points will appear here after clicking 'Generate Summary'...</p>
               </div>
             </div>
           </section>
 
-          <!-- TOOL 2: BROWSER-NATIVE IMAGE COMPRESSOR (SCREENSHOT 2) -->
+          <!-- TOOL 2: BROWSER-NATIVE IMAGE COMPRESSOR -->
           <section id="tool-compressor" class="tool-panel">
             <div class="panel-header">
               <div>
                 <h2>🖼️ Browser-Native Image Compressor & Converter</h2>
                 <p class="panel-sub">100% Client-Side Privacy: Compress PNG, JPG, WebP images instantly without uploading files to any server!</p>
               </div>
-              <span class="pill-badge pill-privacy">🔒 100% Private</span>
+              <div class="badge-pill privacy">🔒 100% Private</div>
             </div>
 
-            <div class="form-container">
-              <div id="drop-zone-image" class="drop-zone-dashed">
-                <div class="folder-icon">📁</div>
-                <div class="drop-title">Drag & Drop your Image here, or <span class="highlight-link">Browse File</span></div>
-                <div class="drop-subtitle">Supports PNG, JPG, JPEG, and WebP (Up to 25MB)</div>
-                <input type="file" id="input-file-image" accept="image/png, image/jpeg, image/webp" class="hidden-file-input">
+            <div class="drop-zone" id="image-drop-zone">
+              <input type="file" id="image-file-input" accept="image/png, image/jpeg, image/webp" hidden>
+              <div class="drop-content">
+                <div class="upload-icon">📁</div>
+                <h3>Drag & Drop your Image here, or <span class="highlight">Browse File</span></h3>
+                <p>Supports PNG, JPG, JPEG, and WebP (Up to 25MB)</p>
               </div>
+            </div>
 
-              <div class="compression-controls grid-controls">
-                <div class="control-box">
-                  <label for="quality-slider">Quality Level: <span id="quality-val">80%</span></label>
-                  <input type="range" id="quality-slider" min="10" max="100" value="80" class="slider">
+            <div id="compress-controls" class="compress-controls-card glass-panel hidden">
+              <div class="preview-grid">
+                <div class="preview-col">
+                  <h4>Original Image</h4>
+                  <div class="img-preview-box">
+                    <img id="img-original-preview" alt="Original Preview">
+                  </div>
+                  <div class="img-info-badge">Size: <span id="orig-size-label">0 KB</span></div>
                 </div>
 
-                <div class="control-box">
-                  <label for="output-format">Convert Format:</label>
-                  <select id="output-format">
-                    <option value="image/webp" selected>WebP (Recommended - Smallest Size)</option>
-                    <option value="image/jpeg">JPEG / JPG</option>
-                    <option value="image/png">PNG</option>
+                <div class="preview-col">
+                  <h4>Compressed Image Live Preview</h4>
+                  <div class="img-preview-box">
+                    <img id="img-compressed-preview" alt="Compressed Preview">
+                  </div>
+                  <div class="img-info-badge success">New Size: <span id="comp-size-label">0 KB</span> (<span id="saved-percent-label">0%</span> Saved)</div>
+                </div>
+              </div>
+
+              <div class="compress-settings-row">
+                <div class="slider-group">
+                  <label for="quality-slider">Quality Compression Level: <span id="quality-val-label">80%</span></label>
+                  <input type="range" id="quality-slider" min="10" max="95" value="80">
+                </div>
+
+                <div class="selector-group">
+                  <label for="target-format">Target Format:</label>
+                  <select id="target-format">
+                    <option value="image/webp" selected>WebP (Best Compression & SEO Speed)</option>
+                    <option value="image/jpeg">JPEG (Universal Compatibility)</option>
+                    <option value="image/png">PNG (Lossless / Transparency)</option>
                   </select>
                 </div>
-              </div>
 
-              <!-- Image Compression Comparison Card -->
-              <div id="img-result-card" class="result-card hidden">
-                <div class="image-comparison-grid">
-                  <div class="img-preview-box">
-                    <div class="img-label">Original Image</div>
-                    <div class="img-wrapper">
-                      <img id="img-orig-preview" alt="Original Preview">
-                    </div>
-                    <div id="orig-size-label" class="size-badge">Size: 0 KB</div>
-                  </div>
-
-                  <div class="img-preview-box">
-                    <div class="img-label highlight">Compressed Result</div>
-                    <div class="img-wrapper">
-                      <img id="img-comp-preview" alt="Compressed Preview">
-                    </div>
-                    <div id="comp-size-label" class="size-badge success">Size: 0 KB (-0%)</div>
-                  </div>
-                </div>
-
-                <div class="action-bar-center">
-                  <a id="btn-download-comp" class="btn btn-success" download="compressed-image.webp">Download Compressed Image</a>
-                </div>
+                <button id="btn-download-img" class="btn btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download Compressed Image
+                </button>
               </div>
             </div>
           </section>
 
-          <!-- TOOL 3: AI SOCIAL BIO & PROMPT OPTIMIZER (SCREENSHOT 3) -->
+          <!-- TOOL 3: AI BIO & PROMPT ENHANCER -->
           <section id="tool-bio" class="tool-panel">
             <div class="panel-header">
               <div>
@@ -225,29 +279,32 @@
               </div>
             </div>
 
+            <div class="mode-chips">
+              <button class="mode-chip active" data-biomode="linkedin">LinkedIn Bio & Headline</button>
+              <button class="mode-chip" data-biomode="twitter">Twitter / X Bio</button>
+              <button class="mode-chip" data-biomode="prompt">ChatGPT / AI Prompt Enhancer</button>
+            </div>
+
             <div class="form-container">
-              <div class="sub-tab-pills">
-                <button class="pill-tab active">LinkedIn Bio & Headline</button>
-                <button class="pill-tab">Twitter / X Bio</button>
-                <button class="pill-tab">ChatGPT / AI Prompt Enhancer</button>
-              </div>
-
-              <div class="form-group">
-                <label for="bio-role">Enter keywords, current role, or raw prompt:</label>
-                <textarea id="bio-role" placeholder="e.g. Full stack developer, passionate about React, building SaaS apps, open for freelance work..."></textarea>
-              </div>
-
-              <button id="btn-generate-bio" class="btn btn-primary-gradient full-width">
-                <span>⚡</span> Generate Optimized Output
+              <label for="bio-input">Enter keywords, current role, or raw prompt:</label>
+              <textarea id="bio-input" placeholder="e.g. Full stack developer, passionate about React, building SaaS apps, open for freelance work..."></textarea>
+              
+              <button id="btn-generate-bio" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                Generate Optimized Output
               </button>
+            </div>
 
-              <div id="bio-output-card" class="output-card hidden">
-                <div id="bio-results-list" class="bio-results-grid"></div>
+            <div class="output-card glass-panel">
+              <div class="output-title-row">
+                <h3>Generated Result</h3>
+                <button id="btn-copy-bio" class="btn btn-secondary small">Copy Text</button>
               </div>
+              <textarea id="bio-output-text" readonly placeholder="Your generated social bio or enhanced prompt will appear here..."></textarea>
             </div>
           </section>
 
-          <!-- TOOL 4: GLASSMORPHISM & SVG WAVE STUDIO (SCREENSHOT 1) -->
+          <!-- TOOL 4: GLASSMORPHISM & SVG WAVE STUDIO -->
           <section id="tool-generator" class="tool-panel">
             <div class="panel-header">
               <div>
@@ -256,101 +313,134 @@
               </div>
             </div>
 
-            <div class="studio-two-column-grid">
-              <!-- COLUMN 1: FROSTED GLASS CSS GENERATOR -->
-              <div class="studio-card">
+            <div class="studio-grid">
+              <!-- Glassmorphism Builder -->
+              <div class="studio-card glass-panel">
                 <h3>Frosted Glass CSS Generator</h3>
-                
-                <div class="glass-card-preview-container">
-                  <div id="glass-card-preview" class="frosted-glass-box">
+                <div id="glass-live-preview" class="glass-preview-box">
+                  <div class="preview-inner-card">
                     <h4>Frosted Glass Card</h4>
                     <p>Live preview of CSS backdrop filter and border effects.</p>
                   </div>
                 </div>
 
-                <div class="slider-group">
-                  <label for="glass-blur">Blur Effect: <span id="val-blur">16px</span></label>
-                  <input type="range" id="glass-blur" min="0" max="40" value="16" class="slider">
-                </div>
+                <div class="controls-column">
+                  <div class="slider-group">
+                    <label for="glass-blur">Blur Effect: <span id="lbl-glass-blur">16px</span></label>
+                    <input type="range" id="glass-blur" min="0" max="40" value="16">
+                  </div>
+                  <div class="slider-group">
+                    <label for="glass-opacity">Glass Opacity: <span id="lbl-glass-opacity">0.25</span></label>
+                    <input type="range" id="glass-opacity" min="0.05" max="0.8" step="0.05" value="0.25">
+                  </div>
+                  <div class="slider-group">
+                    <label for="glass-border">Border Opacity: <span id="lbl-glass-border">0.20</span></label>
+                    <input type="range" id="glass-border" min="0" max="0.6" step="0.05" value="0.20">
+                  </div>
 
-                <div class="slider-group">
-                  <label for="glass-opacity">Glass Opacity: <span id="val-opacity">0.25</span></label>
-                  <input type="range" id="glass-opacity" min="0.05" max="0.8" step="0.05" value="0.25" class="slider">
-                </div>
-
-                <div class="slider-group">
-                  <label for="glass-border">Border Opacity: <span id="val-border">0.2</span></label>
-                  <input type="range" id="glass-border" min="0" max="0.6" step="0.05" value="0.2" class="slider">
+                  <button id="btn-copy-glass-css" class="btn btn-secondary full">Copy CSS Code</button>
                 </div>
               </div>
 
-              <!-- COLUMN 2: INTERACTIVE SVG WAVE GENERATOR -->
-              <div class="studio-card">
+              <!-- SVG Wave Generator -->
+              <div class="studio-card glass-panel">
                 <h3>Interactive SVG Wave Generator</h3>
-
-                <div class="wave-preview-canvas">
-                  <svg id="svg-wave-output" viewBox="0 0 1440 320" preserveAspectRatio="none" style="width: 100%; height: 180px;">
-                    <path fill="#6366f1" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,181.3C960,171,1056,181,1152,197.3C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                <div id="svg-wave-preview" class="wave-preview-box">
+                  <svg id="live-svg-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="#6366f1" fill-opacity="0.8" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,208C672,213,768,171,864,154.7C960,139,1056,149,1152,165.3C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                   </svg>
                 </div>
 
-                <div class="slider-group">
-                  <label for="wave-height">Wave Complexity / Height</label>
-                  <input type="range" id="wave-height" min="20" max="150" value="80" class="slider">
-                </div>
+                <div class="controls-column">
+                  <div class="slider-group">
+                    <label for="wave-height">Wave Complexity / Height</label>
+                    <input type="range" id="wave-height" min="80" max="280" value="180">
+                  </div>
+                  <div class="color-picker-row">
+                    <label for="wave-color">Wave Accent Color:</label>
+                    <input type="color" id="wave-color" value="#6366f1">
+                  </div>
 
-                <div class="color-picker-group">
-                  <label>Wave Accent Color:</label>
-                  <input type="color" id="wave-color" value="#6366f1" class="color-swatch">
+                  <button id="btn-randomize-wave" class="btn btn-outline full">Randomize Wave</button>
+                  <button id="btn-copy-svg" class="btn btn-secondary full">Copy SVG Code</button>
                 </div>
-
-                <button id="btn-random-wave" class="btn btn-secondary-glass full-width">Randomize Wave</button>
               </div>
             </div>
           </section>
 
         </div>
 
-        <!-- RIGHT SIDEBAR AREA -->
+        <!-- RIGHT SIDEBAR: ADSENSE & SUPPORT CONTAINER -->
         <aside class="sidebar-area">
-          <!-- SIDEBAR CARD 1: SPONSORED ADVERTISEMENT -->
-          <div class="sidebar-card ad-card-dashed">
-            <div class="ad-label">SPONSORED ADVERTISEMENT</div>
-            <div class="ad-title">⚡ Boost Your Business with OmniCraft AI Tools</div>
+          <!-- ADSENSE SIDEBAR AD CONTAINER -->
+          <div class="ad-container ad-sidebar">
+            <div class="ad-placeholder">
+              <span class="ad-label">SPONSORED ADVERTISEMENT</span>
+              <div class="ad-content-slot">
+                <!-- Google AdSense Tag Container -->
+                <p>⚡ Boost Your Business with OmniCraft AI Tools</p>
+              </div>
+            </div>
           </div>
 
-          <!-- SIDEBAR CARD 2: DONATION & BUY ME A COFFEE / UPI -->
-          <div class="sidebar-card support-card-violet">
-            <span class="badge-keep-free">❤️ KEEP IT FREE</span>
-            <h3 class="support-title">Love OmniCraft AI?</h3>
-            <p class="support-desc">This web tool is 100% free and open to everyone. Consider supporting developer costs with a small coffee donation!</p>
+          <!-- DONATE / MONETIZATION CARD -->
+          <div class="support-card glass-panel">
+            <div class="support-badge">❤️ KEEP IT FREE</div>
+            <h3>Love OmniCraft AI?</h3>
+            <p>This web tool is 100% free and open to everyone. Consider supporting developer costs with a small coffee donation!</p>
 
-            <button id="btn-show-qr" class="btn-coffee-orange full-width">
-              <span>☕</span> <span>Buy Me a Coffee / UPI</span>
+            <button id="btn-sidebar-donate" class="btn btn-donate full">
+              <span>☕ Buy Me a Coffee / UPI</span>
             </button>
           </div>
         </aside>
       </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <p>© 2026 OmniCraft AI • Built with 100% Client-Side Privacy • No Data Uploaded</p>
+      <div class="footer-links">
+        <a href="#tool-summarizer">Summarizer</a>
+        <a href="#tool-compressor">Compressor</a>
+        <a href="#tool-bio">Bio Enhancer</a>
+        <a href="#tool-generator">Design Studio</a>
+      </div>
+    </footer>
   </div>
 
-  <!-- QR CODE MODAL -->
-  <div id="modal-qr" class="modal-backdrop hidden">
-    <div class="modal-card">
+  <!-- DONATION MODAL -->
+  <div id="donate-modal" class="modal-backdrop hidden">
+    <div class="modal-card glass-panel">
+      <button id="btn-close-modal" class="close-btn">&times;</button>
       <div class="modal-header">
-        <h3>☕ Support OmniCraft AI via UPI</h3>
-        <button id="btn-close-qr" class="close-btn">&times;</button>
+        <div class="modal-icon">☕</div>
+        <h2>Support OmniCraft AI</h2>
+        <p>Help keep this web suite 100% free with zero registration required!</p>
       </div>
-      <div class="qr-container">
-        <img id="qr-code-img" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi%3A%2F%2Fpay%3Fpa%3Domnicraftai%40axl%26pn%3DOmniCraft%2520AI%26cu%3DINR" alt="UPI QR Code">
-        <p class="qr-note">Scan with PhonePe, Google Pay, Paytm, or BHIM</p>
-        <div class="upi-copy-row">
-          <span>omnicraftai@axl</span>
-          <button id="btn-modal-copy-upi" class="chip-btn secondary">Copy</button>
+
+      <div class="donate-options">
+        <div class="donate-box">
+          <h4>🇮🇳 Indian Users (UPI / GPay / PhonePe)</h4>
+          <p>Direct UPI Transfer ID:</p>
+          <div class="upi-box">
+            <span id="upi-id-text">omnicraftai@axl</span>
+            <button id="btn-copy-upi" class="chip-btn">Copy UPI</button>
+          </div>
+        </div>
+
+        <div class="donate-box">
+          <h4>🌍 International Users (Card / BuyMeACoffee)</h4>
+          <a href="https://buymeacoffee.com" target="_blank" rel="noopener" class="btn btn-donate full">
+            Support via BuyMeACoffee.com
+          </a>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- TOAST BAR -->
+  <div id="toast" class="toast-notification hidden">Notification text</div>
 
   <script src="app.js"></script>
 </body>
