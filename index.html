@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="violet">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +16,9 @@
   <!-- Google AdSense Auto-Ads Tag -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361055289131226" crossorigin="anonymous"></script>
 
-  <!-- SEO Meta Tags for Google Ranking -->
-  <title>OmniCraft AI — Free All-In-One AI Text Summarizer, Image Compressor & Creator Tools</title>
-  <meta name="description" content="Free online suite for creators, developers, and students. Summarize text & PDFs, compress images in browser without upload, generate social bios & glassmorphic CSS/SVG background waves.">
-  <meta name="keywords" content="AI text summarizer, free image compressor, browser webp converter, SVG wave generator, CSS glassmorphism generator, social bio creator">
-  <meta name="author" content="OmniCraft AI">
-  
-  <!-- OpenGraph Tags for Social Sharing -->
-  <meta property="og:title" content="OmniCraft AI — Free All-In-One Web & Creator Utility Hub">
-  <meta property="og:description" content="Instant 100% free client-side AI tools: Text Summarizer, Private Image Compressor, Bio Enhancer & SVG Wave Generator. No signup required!">
-  <meta property="og:type" content="website">
+  <!-- SEO Meta Tags -->
+  <title>OmniCraft AI — The Ultimate Free Web Utility & Creator Suite</title>
+  <meta name="description" content="Free 100% client-side AI tools: Text Summarizer, Private Image Compressor, Bio Enhancer & SVG Wave Studio. No signup required!">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,89 +28,80 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- BACKGROUND GLOW ORBS -->
+  <div class="background-glows">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
   <div class="app-layout">
-    <!-- TOP HEADER NAVBAR -->
+    <!-- 1. TOP SPONSORED ADVERTISEMENT BANNER -->
+    <div class="top-ad-banner">
+      <div class="ad-label">SPONSORED ADVERTISEMENT</div>
+      <div class="ad-text">🚀 Unlock Unlimited Productivity Tools &bull; Hosted 100% Free for Everyone</div>
+    </div>
+
+    <!-- 2. HEADER NAVBAR -->
     <header class="app-header">
-      <div class="header-content">
-        <div class="brand-area">
-          <div class="brand-logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 17 22 12"></polyline></svg>
-          </div>
-          <div class="brand-text">
-            <span class="brand-title">OmniCraft <span class="brand-highlight">AI</span></span>
-            <span class="brand-subtitle">Free Web & Creator Utility Hub</span>
-          </div>
+      <div class="brand-area">
+        <div class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">OmniCraft <span class="gradient-text">AI</span></span>
+          <span class="tagline">The Ultimate Free Web Utility & Creator Suite</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="theme-selector-box">
+          <span class="theme-label">🎨 Theme:</span>
+          <select id="select-theme" class="theme-dropdown">
+            <option value="violet" selected>🚀 Cyber Violet</option>
+            <option value="dark">🌙 Cyber Dark</option>
+            <option value="light">☀️ Modern Light</option>
+          </select>
         </div>
 
-        <div class="header-badges">
-          <span class="pill-badge pill-privacy">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-            100% Private (Browser Local)
-          </span>
-          <span class="pill-badge pill-free">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-            100% Free Forever
-          </span>
-        </div>
+        <button id="btn-header-donate" class="btn-donate-glow">
+          <span>☕</span> <span>Support Tool (☕ Donate)</span>
+        </button>
       </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-banner">
-      <div class="hero-container">
-        <h1 class="hero-headline">Instant AI & Web Tools for <span class="gradient-text">Creators, Students & Developers</span></h1>
-        <p class="hero-subtext">No signups. No rate limits. All tools run directly in your browser with complete privacy.</p>
-      </div>
-    </section>
-
-    <!-- GOOGLE ADSENSE RESPONSIVE AD BANNER 1 (TOP) -->
-    <div style="max-width: 1200px; margin: 16px auto; padding: 0 20px; text-align: center;">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1361055289131226"
-           data-ad-slot="auto"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-
-    <!-- TOOL SELECTION TABS -->
+    <!-- 3. HORIZONTAL NAV TABS CONTAINER -->
     <nav class="nav-tabs-container">
-      <button class="nav-tab active" data-tool="tool-summarizer">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-        <span>AI Text Summarizer</span>
+      <button class="nav-tab" data-tool="tool-summarizer">
+        <span>📄</span> <span>AI Text Summarizer</span>
       </button>
 
-      <button class="nav-tab" data-tool="tool-compressor">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-        <span>Private Image Compressor</span>
+      <button class="nav-tab active" data-tool="tool-compressor">
+        <span>🖼️</span> <span>Image Compressor</span>
       </button>
 
       <button class="nav-tab" data-tool="tool-bio">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        <span>Social Bio & Pitch Generator</span>
+        <span>✍️</span> <span>AI Bio & Prompt Enhancer</span>
       </button>
 
       <button class="nav-tab" data-tool="tool-generator">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-        <span>Glassmorphism & Wave Studio</span>
+        <span>📝</span> <span>Glassmorphism & Wave Studio</span>
       </button>
     </nav>
 
-    <!-- MAIN CONTENT AREA -->
+    <!-- 4. MAIN CONTENT AREA (2 COLUMNS) -->
     <main class="main-content">
       <div class="content-grid">
-        <!-- LEFT / MAIN TOOL PANEL -->
+        <!-- LEFT / MAIN TOOL PANEL AREA -->
         <div class="panel-area">
 
           <!-- TOOL 1: AI TEXT SUMMARIZER -->
-          <section id="tool-summarizer" class="tool-panel active">
+          <section id="tool-summarizer" class="tool-panel">
             <div class="panel-header">
               <div>
                 <h2>🤖 AI Smart Text & Document Summarizer</h2>
                 <p class="panel-sub">Extract key insights, bullet summaries, and sentiment analysis instantly.</p>
               </div>
-              <div class="badge-pill">100% Free & Unlimited</div>
+              <span class="pill-badge pill-free">100% Free & Unlimited</span>
             </div>
 
             <div class="form-container">
@@ -152,51 +136,39 @@
                 </div>
 
                 <button id="btn-generate-sum" class="btn btn-primary">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                  Generate Summary
+                  <span>⚡</span> Generate Summary
                 </button>
               </div>
-            </div>
 
-            <!-- Summary Output Area -->
-            <div id="sum-output-card" class="output-card hidden">
-              <div class="output-header">
-                <div class="output-title">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                  AI Generated Summary
+              <!-- Summary Output Area -->
+              <div id="sum-output-card" class="output-card hidden">
+                <div class="output-header">
+                  <div class="output-title">AI Generated Summary</div>
+                  <div class="output-actions">
+                    <button id="btn-copy-sum" class="chip-btn secondary">Copy Text</button>
+                    <button id="btn-download-sum" class="chip-btn secondary">Download TXT</button>
+                  </div>
                 </div>
-
-                <div class="output-actions">
-                  <button id="btn-copy-sum" class="chip-btn secondary">Copy Text</button>
-                  <button id="btn-download-sum" class="chip-btn secondary">Download TXT</button>
-                </div>
-              </div>
-
-              <div id="sum-output-content" class="output-body"></div>
-
-              <div class="output-meta-bar">
-                <span id="meta-word-count">Original: 0 words</span>
-                <span id="meta-reduction">Reduced by 0%</span>
-                <span id="meta-time">Time: 0.2s</span>
+                <div id="sum-output-content" class="output-body"></div>
               </div>
             </div>
           </section>
 
-          <!-- TOOL 2: PRIVATE IMAGE COMPRESSOR & WEBP CONVERTER -->
-          <section id="tool-compressor" class="tool-panel">
+          <!-- TOOL 2: BROWSER-NATIVE IMAGE COMPRESSOR (ACTIVE IN SCREENSHOT) -->
+          <section id="tool-compressor" class="tool-panel active">
             <div class="panel-header">
               <div>
-                <h2>🔒 Private Browser Image Compressor & WebP Converter</h2>
-                <p class="panel-sub">Compress JPG, PNG, and WebP images directly in your browser. Files are never uploaded to any server!</p>
+                <h2>🖼️ Browser-Native Image Compressor & Converter</h2>
+                <p class="panel-sub">100% Client-Side Privacy: Compress PNG, JPG, WebP images instantly without uploading files to any server!</p>
               </div>
-              <div class="badge-pill privacy">Zero Server Uploads</div>
+              <span class="pill-badge pill-privacy">🔒 100% Private</span>
             </div>
 
             <div class="form-container">
-              <div id="drop-zone-image" class="drop-zone">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                <div class="drop-title">Drag & Drop Image Here or <span class="highlight">Browse File</span></div>
-                <div class="drop-subtitle">Supports JPG, PNG, WebP (Max 50MB)</div>
+              <div id="drop-zone-image" class="drop-zone-dashed">
+                <div class="folder-icon">📁</div>
+                <div class="drop-title">Drag & Drop your Image here, or <span class="highlight-link">Browse File</span></div>
+                <div class="drop-subtitle">Supports PNG, JPG, JPEG, and WebP (Up to 25MB)</div>
                 <input type="file" id="input-file-image" accept="image/png, image/jpeg, image/webp" class="hidden-file-input">
               </div>
 
@@ -237,90 +209,69 @@
                 </div>
 
                 <div class="action-bar-center">
-                  <a id="btn-download-comp" class="btn btn-success" download="compressed-image.webp">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                    Download Compressed Image
-                  </a>
+                  <a id="btn-download-comp" class="btn btn-success" download="compressed-image.webp">Download Compressed Image</a>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- TOOL 3: SOCIAL BIO & PITCH GENERATOR -->
+          <!-- TOOL 3: AI BIO & PROMPT ENHANCER -->
           <section id="tool-bio" class="tool-panel">
             <div class="panel-header">
               <div>
-                <h2>✨ AI Social Bio & Elevator Pitch Enhancer</h2>
+                <h2>✍️ AI Social Bio & Elevator Pitch Enhancer</h2>
                 <p class="panel-sub">Craft viral bios for Twitter/X, LinkedIn, Instagram, and GitHub in seconds.</p>
               </div>
-              <div class="badge-pill">4 Platform Presets</div>
+              <span class="pill-badge pill-free">4 Presets</span>
             </div>
 
             <div class="form-container">
               <div class="form-group">
                 <label for="bio-role">Your Role / Profession / Expertise:</label>
-                <input type="text" id="bio-role" placeholder="e.g. Full-Stack Developer, AI Researcher, Content Creator, Student">
+                <input type="text" id="bio-role" placeholder="e.g. Full-Stack Developer, Content Creator, Student">
               </div>
 
               <div class="form-group">
-                <label for="bio-keywords">Key Skills, Achievements or Hobbies (Comma Separated):</label>
-                <input type="text" id="bio-keywords" placeholder="e.g. React, Node.js, Building SaaS, Coffee Lover, Open Source contributor">
+                <label for="bio-keywords">Key Skills / Achievements (Comma Separated):</label>
+                <input type="text" id="bio-keywords" placeholder="e.g. React, Building SaaS, Coffee Lover">
               </div>
 
               <div class="control-toolbar">
                 <div class="selector-group">
-                  <label for="bio-platform">Target Platform:</label>
+                  <label for="bio-platform">Platform:</label>
                   <select id="bio-platform">
-                    <option value="twitter">🐦 Twitter / X Bio (Short & Punchy)</option>
-                    <option value="linkedin">💼 LinkedIn Headline & About (Professional)</option>
-                    <option value="instagram">📸 Instagram Bio (Creative + Emojis)</option>
-                    <option value="github">💻 GitHub Profile README Pitch</option>
+                    <option value="twitter">🐦 Twitter / X Bio</option>
+                    <option value="linkedin">💼 LinkedIn Headline</option>
+                    <option value="instagram">📸 Instagram Bio</option>
+                    <option value="github">💻 GitHub Profile README</option>
                   </select>
                 </div>
 
-                <div class="selector-group">
-                  <label for="bio-vibe">Vibe / Tone:</label>
-                  <select id="bio-vibe">
-                    <option value="witty">⚡ Witty & Viral</option>
-                    <option value="professional">💼 Professional & High Status</option>
-                    <option value="minimalist">✨ Clean & Minimalist</option>
-                  </select>
-                </div>
-
-                <button id="btn-generate-bio" class="btn btn-primary">
-                  Generate Bio Options
-                </button>
+                <button id="btn-generate-bio" class="btn btn-primary">Generate Bio Options</button>
               </div>
 
-              <!-- Bio Output Grid -->
               <div id="bio-output-card" class="output-card hidden">
-                <div class="output-title" style="margin-bottom: 12px;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                  Generated Bio Options
-                </div>
-
                 <div id="bio-results-list" class="bio-results-grid"></div>
               </div>
             </div>
           </section>
 
-          <!-- TOOL 4: GLASSMORPHISM & SVG WAVE STUDIO -->
+          <!-- TOOL 4: GLASSMORPHISM & WAVE STUDIO -->
           <section id="tool-generator" class="tool-panel">
             <div class="panel-header">
               <div>
-                <h2>🎨 CSS Glassmorphism & SVG Wave Studio</h2>
-                <p class="panel-sub">Design modern glass card CSS tokens and customizable SVG background wave dividers for websites.</p>
+                <h2>📝 CSS Glassmorphism & SVG Wave Studio</h2>
+                <p class="panel-sub">Design modern glass card CSS tokens and customizable SVG background wave dividers.</p>
               </div>
-              <div class="badge-pill">Live Visual Preview</div>
+              <span class="pill-badge pill-free">Live Preview</span>
             </div>
 
             <div class="form-container">
               <div class="sub-tool-selector">
                 <button id="tab-glass" class="sub-tab active">Glassmorphism Card Generator</button>
-                <button id="tab-wave" class="sub-tab">SVG Background Wave Generator</button>
+                <button id="tab-wave" class="sub-tab">SVG Wave Generator</button>
               </div>
 
-              <!-- SUB-SECTION 1: GLASSMORPHISM -->
               <div id="sub-panel-glass" class="sub-panel active">
                 <div class="glass-editor-grid">
                   <div class="glass-controls">
@@ -328,63 +279,14 @@
                       <label for="glass-blur">Backdrop Blur: <span id="val-blur">16px</span></label>
                       <input type="range" id="glass-blur" min="0" max="40" value="16" class="slider">
                     </div>
-
-                    <div class="control-box">
-                      <label for="glass-opacity">Glass Opacity: <span id="val-opacity">0.25</span></label>
-                      <input type="range" id="glass-opacity" min="0.05" max="0.8" step="0.05" value="0.25" class="slider">
-                    </div>
-
-                    <div class="control-box">
-                      <label for="glass-border">Border Opacity: <span id="val-border">0.15</span></label>
-                      <input type="range" id="glass-border" min="0" max="0.6" step="0.05" value="0.15" class="slider">
-                    </div>
                   </div>
 
                   <div class="glass-preview-area">
                     <div id="glass-card-preview" class="glass-card">
                       <h3>Glassmorphism Card</h3>
-                      <p>Modern glass card design with CSS backdrop-filter blur and border lighting.</p>
+                      <p>Modern glass card design with CSS backdrop-filter blur.</p>
                     </div>
                   </div>
-                </div>
-
-                <div class="code-output-box">
-                  <div class="code-header">
-                    <span>CSS Code Tokens</span>
-                    <button id="btn-copy-css" class="chip-btn secondary">Copy CSS</button>
-                  </div>
-                  <pre><code id="code-css-output">background: rgba(255, 255, 255, 0.25);
-backdrop-filter: blur(16px);
--webkit-backdrop-filter: blur(16px);
-border: 1px solid rgba(255, 255, 255, 0.15);
-border-radius: 16px;</code></pre>
-                </div>
-              </div>
-
-              <!-- SUB-SECTION 2: SVG WAVE -->
-              <div id="sub-panel-wave" class="sub-panel">
-                <div class="wave-controls-grid">
-                  <div class="control-box">
-                    <label for="wave-color">Wave Color:</label>
-                    <input type="color" id="wave-color" value="#6366f1">
-                  </div>
-
-                  <div class="control-box">
-                    <label for="wave-height">Wave Complexity / Height:</label>
-                    <input type="range" id="wave-height" min="20" max="150" value="80" class="slider">
-                  </div>
-                </div>
-
-                <div class="wave-preview-box">
-                  <div id="wave-svg-container" class="svg-wrapper"></div>
-                </div>
-
-                <div class="code-output-box">
-                  <div class="code-header">
-                    <span>SVG Code Output</span>
-                    <button id="btn-copy-svg" class="chip-btn secondary">Copy SVG Code</button>
-                  </div>
-                  <pre><code id="code-svg-output"></code></pre>
                 </div>
               </div>
             </div>
@@ -392,74 +294,27 @@ border-radius: 16px;</code></pre>
 
         </div>
 
-        <!-- RIGHT SIDEBAR: QUICK STATS & DONATION CARD -->
+        <!-- RIGHT SIDEBAR AREA -->
         <aside class="sidebar-area">
-          <!-- QUICK STATS CARD -->
-          <div class="sidebar-card">
-            <div class="card-header">⚡ Platform Stats</div>
-            <div class="stats-list">
-              <div class="stat-item">
-                <span class="stat-label">Server Requests</span>
-                <span class="stat-value text-success">0 (Client Side)</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Privacy Status</span>
-                <span class="stat-value text-success">100% Protected</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Daily Limit</span>
-                <span class="stat-value">Unlimited</span>
-              </div>
-            </div>
+          <!-- SIDEBAR CARD 1: SPONSORED ADVERTISEMENT -->
+          <div class="sidebar-card ad-card-dashed">
+            <div class="ad-label">SPONSORED ADVERTISEMENT</div>
+            <div class="ad-title">⚡ Boost Your Business with OmniCraft AI Tools</div>
           </div>
 
-          <!-- GOOGLE ADSENSE SIDEBAR DISPLAY AD BANNER -->
-          <div class="sidebar-card" style="text-align: center; padding: 12px;">
-            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">SPONSORED</div>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-1361055289131226"
-                 data-ad-slot="auto"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-          </div>
+          <!-- SIDEBAR CARD 2: DONATION & BUY ME A COFFEE / UPI -->
+          <div class="sidebar-card support-card-violet">
+            <span class="badge-keep-free">❤️ KEEP IT FREE</span>
+            <h3 class="support-title">Love OmniCraft AI?</h3>
+            <p class="support-desc">This web tool is 100% free and open to everyone. Consider supporting developer costs with a small coffee donation!</p>
 
-          <!-- SUPPORT & DONATION CARD (UPI SCAN & PAY) -->
-          <div class="sidebar-card support-card">
-            <div class="card-header">☕ Support OmniCraft AI</div>
-            <p class="support-text">OmniCraft AI is 100% free and serverless. If these tools helped you save time, consider supporting with a coffee!</p>
-
-            <div class="upi-donate-box">
-              <div class="upi-id-badge">
-                <span>UPI:</span>
-                <strong id="upi-id-text">omnicraftai@axl</strong>
-                <button id="btn-copy-upi" class="icon-btn-small" title="Copy UPI ID">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                </button>
-              </div>
-
-              <button id="btn-show-qr" class="btn btn-secondary full-width">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                Scan UPI QR Code
-              </button>
-            </div>
+            <button id="btn-show-qr" class="btn-coffee-orange full-width">
+              <span>☕</span> <span>Buy Me a Coffee / UPI</span>
+            </button>
           </div>
         </aside>
       </div>
     </main>
-
-    <!-- FOOTER -->
-    <footer class="app-footer">
-      <div class="footer-container">
-        <div class="footer-brand">OmniCraft AI &copy; 2026 — Built for Creators & Developers</div>
-        <div class="footer-links">
-          <span>Client-Side BYOK Architecture</span>
-          <span>&bull;</span>
-          <span>Privacy Guaranteed</span>
-        </div>
-      </div>
-    </footer>
   </div>
 
   <!-- QR CODE MODAL -->
